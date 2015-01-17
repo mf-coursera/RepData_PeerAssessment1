@@ -75,14 +75,12 @@ hist (sumStepsByDay$steps, xlab=&quot;Total Steps&quot;, main=&quot;Histogram - 
 <pre class="r"><code>meanSteps &lt;- mean  (sumStepsByDay$steps)
 meanSteps</code></pre>
 <pre><code>## [1] 10766.19</code></pre>
-<p>The mean total number of steps taken per day is 1.076618910^{4}</p>
 <ol start="3" style="list-style-type: decimal">
 <li>Median total number of steps taken per day</li>
 </ol>
 <pre class="r"><code>medianSteps &lt;- median (sumStepsByDay$steps)
 medianSteps</code></pre>
 <pre><code>## [1] 10765</code></pre>
-<p>The median total number of steps taken per day is 10765</p>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level2">
 <h2>What is the average daily activity pattern?</h2>
@@ -132,14 +130,13 @@ hist (sumStepsByDayFill$steps, xlab=&quot;Steps&quot;, main=&quot;Histogram - To
 <pre class="r"><code>meanStepsFill &lt;- mean (sumStepsByDayFill$steps)
 meanStepsFill</code></pre>
 <pre><code>## [1] 10766.19</code></pre>
-<p>The mean total number of steps per day is 1.076618910^{4}</p>
 <p>Median total number of steps per day</p>
 <pre class="r"><code>medianStepsFill &lt;- median (sumStepsByDayFill$steps)
+medianStepsFill &lt;- round(medianStepsFill,2)
 medianStepsFill</code></pre>
 <pre><code>## [1] 10766.19</code></pre>
-<p>The median total number of steps per day is 1.076618910^{4}</p>
 <p>Do these values differ from the estimates from the first part of the assignment?<br />- Mean is the same - Difference in median values are negligible</p>
-<p>What is the impact of imputing missing data on the estimates of the total daily number of steps?<br />- Higher frequency (observations) of daily number of steps</p>
+<p>What is the impact of imputing missing data on the estimates of the total daily number of steps?<br />- Higher frequency (observations) of daily number of steps since there are 2304 observations now filled in.</p>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
